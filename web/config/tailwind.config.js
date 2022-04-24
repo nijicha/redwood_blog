@@ -353,8 +353,8 @@ module.exports = {
     },
     fontFamily: {
       sans: ['"Noto Sans Thai"', '"Noto Sans Display"'],
-      serif: ['Georgia'],
-      mono: ['"Courier New"', 'monospace'],
+      serif: ['Noto Serif Thai', '"Noto Serif Display"'],
+      mono: ['Sarabun', '"Courier New"', 'monospace'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -372,14 +372,10 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     fontWeight: {
-      thin: '100',
-      extralight: '200',
       light: '300',
       normal: '400',
       medium: '500',
-      semibold: '600',
       bold: '700',
-      extrabold: '800',
       black: '900',
     },
     gap: ({ theme }) => theme('spacing'),
