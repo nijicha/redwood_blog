@@ -9,14 +9,18 @@ export default async () => {
     //
     // Update "const data = []" to match your data model and seeding needs
     //
-    const data: Prisma.UserExampleCreateArgs['data'][] = [
-      // To try this example data with the UserExample model in schema.prisma,
+    const data: Prisma.PostCreateArgs['data'][] = [
+      // To try this example data with the Post model in schema.prisma,
       // uncomment the lines below and run 'yarn rw prisma migrate dev'
-      //
-      // { name: 'alice', email: 'alice@example.com' },
-      // { name: 'mark', email: 'mark@example.com' },
-      // { name: 'jackie', email: 'jackie@example.com' },
-      // { name: 'bob', email: 'bob@example.com' },
+
+      {
+        title: 'เจ๊ท็อปบู๊ทแฟ้บว่ะ',
+        body: 'รองรับ แอดมิชชั่นบาบูน เจลซาดิสม์ รองรับจุ๊ยสเปก อุปสงค์',
+      },
+      {
+        title: 'Long established fact',
+        body: 'that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it',
+      },
     ]
     console.log(
       "\nUsing the default './scripts/seed.{js,ts}' template\nEdit the file to add seed data\n"
@@ -24,12 +28,12 @@ export default async () => {
 
     // Note: if using PostgreSQL, using `createMany` to insert multiple records is much faster
     // @see: https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#createmany
-    Promise.all(
+    await Promise.all(
       //
       // Change to match your data model and seeding needs
       //
-      data.map(async (data: Prisma.UserExampleCreateArgs['data']) => {
-        const record = await db.userExample.create({ data })
+      data.map(async (data: Prisma.PostCreateArgs['data']) => {
+        const record = await db.post.create({ data })
         console.log(record)
       })
     )
