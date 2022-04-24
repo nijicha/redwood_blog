@@ -9,16 +9,20 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
   return (
     <>
       <header>
-        <h1>
+        <h1 className="text-2xl">
           <Link to={routes.home()}>Redwood Blog</Link>
         </h1>
         <nav>
-          <ul>
+          <ul className="flex flex-row space-x-4">
             <li>
-              <Link to={routes.home()}>Home</Link>
+              <Link to={routes.home()} className="hover:underline">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to={routes.about()}>About</Link>
+              <Link to={routes.about()} className="hover:underline">
+                About
+              </Link>
             </li>
           </ul>
         </nav>
