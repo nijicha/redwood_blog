@@ -9,8 +9,8 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
   return (
     <>
       <header>
-        <h1 className="text-2xl">
-          <Link to={routes.home()}>Redwood Blog</Link>
+        <h1 className="text-2xl font-bold">
+          <Link to={routes.home()}>Example Blog</Link>
         </h1>
         <nav>
           <ul className="flex flex-row space-x-4">
