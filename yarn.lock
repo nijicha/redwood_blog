@@ -2150,6 +2150,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@faker-js/faker@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "@faker-js/faker@npm:6.2.0"
+  checksum: 884ffdbe5488ca02386487a8fcf259007abbeb65553709a86a63adfe898f101fe5fa75cebfbe6b70c5d478c629dbdb3c4ab27ea1b92bf14ee803e07fa338c53e
+  languageName: node
+  linkType: hard
+
 "@fastify/ajv-compiler@npm:^1.0.0":
   version: 1.1.0
   resolution: "@fastify/ajv-compiler@npm:1.1.0"
@@ -23856,6 +23863,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:web"
   dependencies:
+    "@faker-js/faker": ^6.2.0
     "@fortawesome/fontawesome-svg-core": ^6.1.1
     "@fortawesome/free-brands-svg-icons": ^6.1.1
     "@fortawesome/free-regular-svg-icons": ^6.1.1
