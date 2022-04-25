@@ -23,6 +23,10 @@ Your browser should automatically open to http://localhost:8910 where you'll see
 
 ## Quick Links
 
-- [RedwoodJS](https://redwoodjs.com) 🌲
-- Hundred pts 💯 CSS framework in 2022 [tailwindcss](https://tailwindcss.com/)
+- Core framework [RedwoodJS](https://redwoodjs.com) 🌲
+- A 💯 pts CSS framework in 2022 [tailwindcss](https://tailwindcss.com/)
 - Awesome SVG ✨️ thanks to [unDraw](https://undraw.co/)
+- UI helpers
+  - [headless UI](https://headlessui.dev/) and [heroicons](https://heroicons.com/) by the makers of Tailwind
+    CSS
+  - [Fontawesome 6](https://fontawesome.com/)

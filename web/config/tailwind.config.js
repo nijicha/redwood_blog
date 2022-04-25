@@ -928,5 +928,13 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/typography'), // https://tailwindcss.com/docs/typography-plugin
+    require('@tailwindcss/forms'), // https://github.com/tailwindlabs/tailwindcss-forms
+    require('@tailwindcss/aspect-ratio'), // https://github.com/tailwindlabs/tailwindcss-aspect-ratio
+    require('@tailwindcss/line-clamp'), // https://github.com/tailwindlabs/tailwindcss-line-clamp
+  ],
 }
