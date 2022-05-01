@@ -21,6 +21,6 @@ body,
   @apply h-full;
 }
 
-#redwood-app {
-  @apply tracking-wider;
+body {
+  @apply font-sans antialiased tracking-wider
 }

@@ -13,7 +13,7 @@ export default () => (
         <p className="text-sm font-semibold text-black text-opacity-50 uppercase tracking-wide">
           404 error
         </p>
-        <h1 className="mt-2 text-4xl font-bold text-white tracking-tight sm:text-5xl">
+        <h1 className="mt-2 text-4xl font-bold text-neutral-50 tracking-tight sm:text-5xl">
           Uh oh! I think you’re lost.
         </h1>
         <p className="mt-2 text-lg font-medium text-black text-opacity-50">
@@ -22,7 +22,7 @@ export default () => (
         <div className="mt-6">
           <Link
             to={routes.home()}
-            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black text-opacity-75 bg-white bg-opacity-75 sm:bg-opacity-25 sm:hover:bg-opacity-50"
+            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black text-opacity-75 bg-neutral-50 bg-opacity-75 sm:bg-opacity-25 sm:hover:bg-opacity-50"
           >
             Go back home
           </Link>
