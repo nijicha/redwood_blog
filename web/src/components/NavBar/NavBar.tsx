@@ -14,21 +14,21 @@ import { classNames } from 'src/components/helpers/helper'
 const NavBar = () => {
   return (
     <nav>
-      <Disclosure as="nav" className="bg-neutral-800">
+      <Disclosure as="nav" className="bg-neutral-50">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between h-16">
                 <div className="flex items-center">
                   <Link to={routes.home()} className="flex-shrink-0">
-                    <span className="flex p-2 rounded-lg bg-neutral-50 hover:ring-cyan-500">
+                    <span className="flex p-2 rounded-lg bg-rose-500">
                       <FontAwesomeIcon
                         icon={duotone('book')}
                         className="w-6 h-6"
                         style={
                           {
-                            '--fa-primary-color': colors.rose[600],
-                            '--fa-secondary-color': colors.neutral[50],
+                            '--fa-primary-color': colors.neutral[50],
+                            '--fa-secondary-color': colors.rose[800],
                             '--fa-primary-opacity': 1.0,
                             '--fa-secondary-opacity': 0.8,
                           } as CSSProperties
