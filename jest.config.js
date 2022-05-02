@@ -5,4 +5,12 @@
 module.exports = {
   rootDir: '.',
   projects: ['<rootDir>/{*,!(node_modules)/**/}/jest.config.js'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    'web/src/**/*.{js,jsx,ts,tsx}',
+    'api/src/**/*.{js,jsx,ts,tsx}',
+    '!**/coverage/**',
+    '!**/node_modules/**',
+    '!**/babel.config.js',
+  ],
 }
