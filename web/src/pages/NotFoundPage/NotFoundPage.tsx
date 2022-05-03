@@ -1,44 +1,42 @@
+// TODO: use SVG
+// 1. Import svg image directly
+// import MoonLightSVG from './moonlight.svg'
+//
+// or
+//
+// 2. Import svg component
+// import MoonLight from 'src/pages/NotFoundPage/MoonLight'
+
+import { Link, routes } from '@redwoodjs/router'
+
 export default () => (
-  <main>
-    <style
-      dangerouslySetInnerHTML={{
-        __html: `
-              html, body {
-                margin: 0;
-              }
-              html * {
-                box-sizing: border-box;
-              }
-              main {
-                display: flex;
-                align-items: center;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-                text-align: center;
-                background-color: #E2E8F0;
-                height: 100vh;
-              }
-              section {
-                background-color: white;
-                border-radius: 0.25rem;
-                width: 32rem;
-                padding: 1rem;
-                margin: 0 auto;
-                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-              }
-              h1 {
-                font-size: 2rem;
-                margin: 0;
-                font-weight: 500;
-                line-height: 1;
-                color: #2D3748;
-              }
-            `,
+  <>
+    <main
+      className="min-h-full bg-cover bg-top sm:bg-top"
+      style={{
+        backgroundImage:
+          'url("https://images.unsplash.com/photo-1545972154-9bb223aac798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3050&q=80&exp=8&con=-15&sat=-75")',
       }}
-    />
-    <section>
-      <h1>
-        <span>404 Page Not Found</span>
-      </h1>
-    </section>
-  </main>
+    >
+      <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
+        <p className="text-sm font-semibold uppercase tracking-wide text-black text-opacity-50">
+          404 error
+        </p>
+        <h1 className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          Uh oh! I think you’re lost.
+        </h1>
+        <p className="mt-2 text-lg font-medium text-black text-opacity-50">
+          It looks like the page you’re looking for doesn&apos;t exist.
+        </p>
+        <div className="mt-6">
+          <Link
+            to={routes.home()}
+            className="inline-flex items-center rounded-md border border-transparent bg-white bg-opacity-75 px-4 py-2 text-sm font-medium text-black text-opacity-75 sm:bg-opacity-25 sm:hover:bg-opacity-50"
+          >
+            Go back home
+          </Link>
+        </div>
+      </div>
+    </main>
+  </>
 )

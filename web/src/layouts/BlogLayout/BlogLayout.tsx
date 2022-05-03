@@ -1,5 +1,8 @@
-import { Link, routes } from '@redwoodjs/router'
 import React from 'react'
+
+import HeaderBanner from 'src/components/Layouts/HeaderBanner'
+import NavBar from 'src/components/Layouts/NavBar'
+import Footer from 'src/components/Layouts/Footer'
 
 type BlogLayoutProps = {
   children?: React.ReactNode
@@ -7,28 +10,16 @@ type BlogLayoutProps = {
 
 const BlogLayout = ({ children }: BlogLayoutProps) => {
   return (
-    <>
+    <div className="flex min-h-full flex-col justify-between">
       <header>
-        <h1 className="text-2xl">
-          <Link to={routes.home()}>Redwood Blog</Link>
-        </h1>
-        <nav>
-          <ul className="flex flex-row space-x-4">
-            <li>
-              <Link to={routes.home()} className="hover:underline">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to={routes.about()} className="hover:underline">
-                About
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <HeaderBanner />
+        <NavBar />
       </header>
       <main>{children}</main>
-    </>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   )
 }
 

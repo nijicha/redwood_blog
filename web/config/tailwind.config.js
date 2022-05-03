@@ -353,7 +353,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['"Noto Sans Thai"', '"Noto Sans Display"'],
-      serif: ['Noto Serif Thai', '"Noto Serif Display"'],
+      serif: ['"Noto Serif Thai"', '"Noto Serif Display"'],
       mono: ['Sarabun', '"Courier New"', 'monospace'],
     },
     fontSize: {
@@ -372,10 +372,14 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     fontWeight: {
+      thin: '100',
+      extralight: '200',
       light: '300',
       normal: '400',
       medium: '500',
+      semibold: '600',
       bold: '700',
+      extrabold: '800',
       black: '900',
     },
     gap: ({ theme }) => theme('spacing'),
@@ -928,5 +932,13 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/typography'), // https://tailwindcss.com/docs/typography-plugin
+    require('@tailwindcss/forms'), // https://github.com/tailwindlabs/tailwindcss-forms
+    require('@tailwindcss/aspect-ratio'), // https://github.com/tailwindlabs/tailwindcss-aspect-ratio
+    require('@tailwindcss/line-clamp'), // https://github.com/tailwindlabs/tailwindcss-line-clamp
+  ],
 }
