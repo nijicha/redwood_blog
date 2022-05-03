@@ -7,7 +7,7 @@ import colors from 'tailwindcss/colors'
 const NavBar = () => {
   return (
     <nav>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl border-b-2 border-neutral-200 px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link to={routes.home()} className="flex-shrink-0">
@@ -43,7 +43,7 @@ const NavBar = () => {
                   icon={brands('github')}
                   className="h-6 w-6 text-neutral-900"
                 />
-                <p className="ml-2 text-neutral-900 hover:underline hover:decoration-2 hover:underline-offset-2">
+                <p className="ml-2 text-neutral-900 hover:underline hover:decoration-amber-500 hover:decoration-2 hover:underline-offset-2">
                   nijicha/redwood_blog
                 </p>
               </a>
