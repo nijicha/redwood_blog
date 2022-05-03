@@ -30,3 +30,8 @@ Your browser should automatically open to http://localhost:8910 where you'll see
   - [headless UI](https://headlessui.dev/) and [heroicons](https://heroicons.com/) by the makers of Tailwind
     CSS
   - [Fontawesome 6](https://fontawesome.com/)
+
+## TODO
+
+- [ ] Prerender static page: https://redwoodjs.com/docs/prerender
+- [ ] ENV things: https://redwoodjs.com/docs/environment-variables

@@ -1,6 +1,10 @@
 import React from 'react'
-import HeaderBanner from 'src/components/HeaderBanner/HeaderBanner'
-import NavBar from 'src/components/NavBar/NavBar'
+
+import HeaderBanner from 'src/components/Layouts/HeaderBanner'
+import NavBar from 'src/components/Layouts/NavBar'
+import Footer from 'src/components/Layouts/Footer'
+
+import EnvironmentBadge from 'src/components/Development/EnvironmentBadge'
 
 type BlogLayoutProps = {
   children?: React.ReactNode
@@ -8,13 +12,17 @@ type BlogLayoutProps = {
 
 const BlogLayout = ({ children }: BlogLayoutProps) => {
   return (
-    <>
-      <HeaderBanner />
+    <div className="flex h-screen flex-col justify-between">
       <header>
+        <EnvironmentBadge />
+        <HeaderBanner />
         <NavBar />
       </header>
       <main>{children}</main>
-    </>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   )
 }
 
