@@ -16,10 +16,10 @@ const HeaderBanner = () => {
         leaveTo="opacity-0"
       >
         <div className="bg-cyan-600">
-          <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between flex-wrap">
-              <div className="w-0 flex-1 flex items-center justify-center">
-                <p className="ml-3 font-semibold text-neutral-50 truncate">
+          <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap items-center justify-between">
+              <div className="flex w-0 flex-1 items-center justify-center">
+                <p className="ml-3 truncate font-semibold text-white">
                   <span className="hidden md:inline">
                     <HeartSolidIcon
                       className="inline h-5 w-5 text-red-500"
@@ -29,7 +29,7 @@ const HeaderBanner = () => {
                   </span>
                   <span className="md:inline">
                     <a
-                      className="underline decoration-2 underline-offset-2 hover:text-neutral-50 hover:decoration-red-500"
+                      className="underline decoration-2 underline-offset-2 hover:text-white hover:decoration-red-500"
                       href="https://redwoodjs.com"
                       target="_blank"
                       rel="noreferrer"
@@ -38,7 +38,7 @@ const HeaderBanner = () => {
                     </a>
                     {' + '}
                     <a
-                      className="underline decoration-2 underline-offset-2 hover:text-neutral-50 hover:decoration-cyan-500"
+                      className="underline decoration-2 underline-offset-2 hover:text-white hover:decoration-cyan-500"
                       href="https://tailwindcss.com"
                       target="_blank"
                       rel="noreferrer"
@@ -57,16 +57,13 @@ const HeaderBanner = () => {
               <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
                 <button
                   type="button"
-                  className="-mr-1 flex p-2 rounded-md hover:outline-none hover:ring-2 hover:ring-neutral-50 sm:-mr-2"
+                  className="-mr-1 flex rounded-md p-2 hover:outline-none hover:ring-2 hover:ring-white sm:-mr-2"
                   onClick={() => {
                     setShow(false)
                   }}
                 >
                   <span className="sr-only">Dismiss</span>
-                  <XIcon
-                    className="h-6 w-6 text-neutral-50 hover:rotate-90"
-                    aria-hidden="true"
-                  />
+                  <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
                 </button>
               </div>
             </div>

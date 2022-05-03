@@ -1,5 +1,5 @@
 .rw-scaffold {
-  @apply bg-neutral-50 text-neutral-600;
+  @apply bg-white text-neutral-600;
 }
 
 .rw-scaffold h1,
@@ -109,7 +109,7 @@
 }
 
 .rw-button:hover {
-  @apply bg-neutral-500 text-neutral-50;
+  @apply bg-neutral-500 text-white;
 }
 
 .rw-button.rw-button-small {
@@ -117,7 +117,7 @@
 }
 
 .rw-button.rw-button-green {
-  @apply bg-green-500 text-neutral-50;
+  @apply bg-green-500 text-white;
 }
 
 .rw-button.rw-button-green:hover {
@@ -125,7 +125,7 @@
 }
 
 .rw-button.rw-button-blue {
-  @apply bg-blue-500 text-neutral-50;
+  @apply bg-blue-500 text-white;
 }
 
 .rw-button.rw-button-blue:hover {
@@ -133,11 +133,11 @@
 }
 
 .rw-button.rw-button-red {
-  @apply bg-red-500 text-neutral-50;
+  @apply bg-red-500 text-white;
 }
 
 .rw-button.rw-button-red:hover {
-  @apply bg-red-700 text-neutral-50;
+  @apply bg-red-700 text-white;
 }
 
 .rw-button-icon {
@@ -165,7 +165,7 @@
 }
 
 .rw-input {
-  @apply block mt-2 w-full p-2 bg-neutral-50 border border-neutral-200 rounded outline-none;
+  @apply block mt-2 w-full p-2 bg-white border border-neutral-200 rounded outline-none;
 }
 
 .rw-check-radio-items {
@@ -216,7 +216,7 @@
 }
 
 .rw-table td {
-  @apply bg-neutral-50 text-neutral-900;
+  @apply bg-white text-neutral-900;
 }
 
 .rw-table thead tr {
@@ -242,7 +242,7 @@
 }
 
 .rw-table tbody tr {
-  @apply bg-neutral-50 border-t border-neutral-200;
+  @apply bg-white border-t border-neutral-200;
 }
 
 .rw-table input {
@@ -258,7 +258,7 @@
 }
 
 .rw-table-actions .rw-button:hover {
-  @apply bg-neutral-500 text-neutral-50;
+  @apply bg-neutral-500 text-white;
 }
 
 .rw-table-actions .rw-button-blue {
@@ -266,7 +266,7 @@
 }
 
 .rw-table-actions .rw-button-blue:hover {
-  @apply bg-blue-500 text-neutral-50;
+  @apply bg-blue-500 text-white;
 }
 
 .rw-table-actions .rw-button-red {
@@ -274,7 +274,7 @@
 }
 
 .rw-table-actions .rw-button-red:hover {
-  @apply bg-red-600 text-neutral-50;
+  @apply bg-red-600 text-white;
 }
 
 .rw-text-center {
