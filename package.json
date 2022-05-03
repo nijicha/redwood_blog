@@ -25,9 +25,10 @@
   },
   "packageManager": "yarn@3.2.0",
   "lint-staged": {
-    "(web|api)/src/**/*.{js,jsx,ts,tsx}": "yarn rw lint --fix"
+    "(web|api)/src/**/*{js,jsx,ts,tsx}": "yarn rw lint --fix"
   },
   "scripts": {
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prettier": "prettier --write ."
   }
 }

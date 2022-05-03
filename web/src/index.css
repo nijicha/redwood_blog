@@ -20,5 +20,5 @@ body,
 }
 
 body {
-  @apply font-sans antialiased tracking-wide;
+  @apply font-sans tracking-wide antialiased;
 }
