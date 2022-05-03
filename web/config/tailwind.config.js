@@ -353,7 +353,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['"Noto Sans Thai"', '"Noto Sans Display"'],
-      serif: ['Noto Serif Thai', '"Noto Serif Display"'],
+      serif: ['"Noto Serif Thai"', '"Noto Serif Display"'],
       mono: ['Sarabun', '"Courier New"', 'monospace'],
     },
     fontSize: {
