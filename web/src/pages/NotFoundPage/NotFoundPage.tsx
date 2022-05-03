@@ -1,3 +1,12 @@
+// TODO: use SVG
+// 1. Import svg image directly
+// import MoonLightSVG from './moonlight.svg'
+//
+// or
+//
+// 2. Import svg component
+// import MoonLight from 'src/pages/NotFoundPage/MoonLight'
+
 import { Link, routes } from '@redwoodjs/router'
 
 export default () => (

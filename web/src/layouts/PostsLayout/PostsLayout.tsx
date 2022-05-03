@@ -4,8 +4,6 @@ import { Link, routes } from '@redwoodjs/router'
 import { Toaster } from '@redwoodjs/web/toast'
 import React, { useState } from 'react'
 
-import EnvironmentBadge from 'src/components/Development/EnvironmentBadge'
-
 type PostLayoutProps = {
   children: React.ReactNode
 }
@@ -66,7 +64,6 @@ const AdminBanner = () => {
 const PostsLayout = ({ children }: PostLayoutProps) => {
   return (
     <div className="rw-scaffold">
-      <EnvironmentBadge />
       <AdminBanner />
 
       <Toaster toastOptions={{ className: 'rw-toast', duration: 6000 }} />
