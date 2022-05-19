@@ -9,12 +9,11 @@
   },
   "devDependencies": {
     "@redwoodjs/core": "^1.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "husky": ">=6",
-    "lint-staged": ">=10"
-  },
-  "eslintConfig": {
-    "extends": "@redwoodjs/eslint-config",
-    "root": true
+    "lint-staged": ">=10",
+    "prettier": "^2.6.2"
   },
   "engines": {
     "node": ">=14.19 <=16.x",

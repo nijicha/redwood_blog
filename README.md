@@ -13,13 +13,30 @@ Start by installing dependencies:
 yarn install
 ```
 
-Then change into that directory and start the development server:
+Setup development database:
 
 ```
-yarn redwood dev
+yarn rw prisma migrate dev
+yarn rw prisma db seed
+```
+
+Start development server:
+
+```
+yarn rw dev
 ```
 
 Your browser should automatically open to http://localhost:8910 where you'll see the HomePage
+
+## Troubleshooting
+
+If `prisma` warning
+
+**prisma@npm:x.x.x must be built because it never has been before or the last one failed**
+
+Remove `prisma` cache by `rm -rf ~/.cache/prisma`
+
+See more: [https://github.com/redwoodjs/redwood/issues/404](https://github.com/redwoodjs/redwood/issues/404#issuecomment-611884551)
 
 ## Quick Links
 
