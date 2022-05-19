@@ -15,9 +15,12 @@ yarn install
 
 Setup development database:
 
-```
+```shell
 yarn rw prisma migrate dev
 yarn rw prisma db seed
+
+# or reset the existing database + run seed script
+yarn rw prisma migrate reset
 ```
 
 Start development server:
