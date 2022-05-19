@@ -1,12 +1,21 @@
+import { useEffect, useState } from 'react'
+import { Environment } from 'types/applcation'
+
 const EnvironmentBadge = () => {
-  const stage = process.env.NODE_ENV || 'development'
+  const [stage, setStage] = useState<Environment>('development')
+  const [debugMode, setDebugMode] = useState<boolean>(false)
 
   const classes = {
     development: { text: 'text-white', bg: 'bg-cyan-500' },
-    test: { text: 'text-white', bg: 'bg-purple-500' },
+    staging: { text: 'text-white', bg: 'bg-purple-500' },
   }
 
-  if (stage === 'production') {
+  useEffect(() => {
+    setStage(process.env.NODE_ENV)
+    setDebugMode(process.env.DEBUG_MODE === 'true')
+  }, [])
+
+  if (stage === 'production' && !debugMode) {
     return null
   }
 
